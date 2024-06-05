@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 
 import { HeaderComponent } from './header/header.component';
 import { UserComponent } from './user/user.component';
+import { DUMMY_USERS } from './dummy-users';
 
 @Component({
   selector: 'app-root',
@@ -13,4 +14,10 @@ import { UserComponent } from './user/user.component';
 })
 export class AppComponent {
   title = 'app1';
+
+  users = DUMMY_USERS;
+
+  onSelectUser(id: string) {
+    console.log('User id: ' + id);
+  }
 }
