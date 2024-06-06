@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output, inject } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { DatePipe } from '@angular/common';
 
 import { type Task } from './task.model';
